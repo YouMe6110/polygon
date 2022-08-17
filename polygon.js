@@ -42,8 +42,6 @@ export class Polygon {
       const x = this.radius * Math.cos(angle * i);
       const y = this.radius * Math.sin(angle * i);
 
-      i == 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
-
       ctx.save();
       ctx.fillStyle = COLORS[i];
       ctx.translate(x, y);
